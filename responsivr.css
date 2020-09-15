@@ -1,0 +1,152 @@
+
+/*.......main......Css.........*/
+.responsive-mano {
+    position: absolute;
+    right: 24px;
+    top: 19px;
+}
+.form-group{}
+.form-control {
+    height: 41px;
+    width: 158px;
+    padding: 10px;
+    font-size: 15px;
+    visibility: hidden;
+}
+
+
+/*************************Responsive-------CSS*********************************/
+
+@media(max-width:1130px) {
+    .banner-content {
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+    .odio-items {
+        padding: 0 16px;
+    }
+    .foter-section {
+        background: #005171;
+        padding: 10px;
+    }
+}
+
+@media(max-width:850px) {
+    .header-section {
+        padding-left: 29px;
+        padding-right: 29px;
+    }
+    .header-right {
+        display: none;
+    }
+    .form-control{
+        visibility: visible;
+    }
+    .banner-content p {
+        font-size: 17px;
+    }
+    .banner-content h1 {
+        font-size: 44px;
+    }
+    .contact-section {
+        margin-top: 450px;
+    }
+    .banner-section {
+        height: 451px;
+    }
+    .cur-top h3 {
+        font-size: 30px;
+    }
+    .odio-header p {
+        font-size: 14px;
+    }
+    .odio-header h6 {
+        font-size: 19px;
+    }
+}
+@media(max-width:730px) {
+    .d-flwx {
+        display: inherit;
+    }
+    .contact-item {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .cur-items {
+        text-align: center;
+    }
+    .cur-item {
+        width: 88%;
+        display: inline-block;
+    }
+    .cur-items {
+        display: inherit;
+    }
+    .Sapien-box {
+        display: inherit;
+    }
+    .box-left {
+        width: 100%;
+    }
+    .foter-item {
+        width: 97%;
+        display: inline-block;
+        padding: 10px;
+    }
+}
+@media(max-width:620px) {
+    .odio-items {
+        display: inherit;
+    }
+    .odio-item {
+        width: 100%;
+        margin-bottom: 18px;
+    }
+}
+@media(max-width:482px) {
+    .banner-content h1 {
+        font-size: 28px;
+    }
+    .banner-content p {
+        font-size: 15px;
+    }
+    .banner-section {
+        height: 240px;
+    }
+    .banner-content {
+        margin-top: 29px;
+    }
+    .banner-content a {
+        width: 60px;
+        height: 19px;
+        line-height: 19px;
+    }
+    .contact-section {
+        margin-top: 238px;
+    }
+    .banner-content p {
+        margin-bottom: 7px;
+    }
+    .banner-content h1 {
+        margin-bottom: 6px;
+    }
+    .cur-top h3 {
+        font-size: 23px;
+    }
+    .box-line {
+        display: inherit;
+    }
+    .box-line-left {
+        width: 100%;
+    }
+    .box-line-left ul li {
+        width: 100%;
+    }
+    .box-line-right {
+        width: 100%;
+    }
+    .box-line-right ul li {
+        width: 100%;
+    }
+}
+

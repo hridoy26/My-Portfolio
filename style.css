@@ -1,0 +1,523 @@
+/*.............defolt css...........*/
+*{
+    padding: 0;
+    margin: 0;
+
+}
+*, ::before, ::after {
+    transition: all .3s ease-in-out;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.container {
+    max-width: 1120px;
+    margin: auto;
+}
+img{
+    max-width: 100%;
+}
+.clear::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.center{
+    text-align: center;
+}
+
+/*.............Maain Css...............*/
+/*.............Header-Css...............*/
+.header-section {
+    background:linear-gradient(to right, #33ccff 0%, #0000ff 100%);;
+    padding: 10px;
+    
+}
+.header-left{}
+.logo{}
+.logo img {
+    width: 100px;
+}
+
+.header-right{}
+.mano{}
+.mano ul{
+    list-style: none;
+}
+.mano ul li{
+    display: inline-block;
+    position: relative;
+}
+.mano ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px 10px;
+    font-size: 20px;
+    color: #fff;
+    transition: .4s;
+    line-height: 40px;
+}
+.mano ul li a:hover{
+    color: #0de7ff;
+}
+
+/*..............Dropdown---CSS..............*/
+.mano ul li ul li:hover{
+    background: rgb(4, 15, 255);
+}
+
+.mano ul li ul{
+    position: absolute;
+    left: 0;
+    top: 115%;
+    width: 186px;
+    height: 288px;
+    background: #0095ee;
+    z-index: 1;
+}
+.mano ul li ul li {
+    padding: 0;
+    display: block;
+}
+.mano ul li ul li a {
+    padding: 0;
+    padding-left: 14px;
+    border-bottom: 1px solid #fff;
+    display: block;
+}
+/*..............Hover-part..............*/
+.mano ul li ul{
+   visibility: hidden;
+   opacity: 0;
+   transition: all .3s ease-in-out;
+}
+.mano ul li:hover > ul{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+/*..............Banner-CSS..............*/
+.banner-section {
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 79px;
+    width: 100%;
+    height: 498px;
+    animation:animate 15s step-start infinite;
+    background-size: cover;
+    background-position: center;
+}
+@keyframes animate{
+    0%,100%{
+        background-image: url(./img/banner.jpg);
+    }
+    25%{
+        background-image: url(./img/banner1.jpg);
+    }
+    50%{
+        background-image: url(./img/banner2.jpg);
+    }
+    75%{
+        background-image: url(./img/banner3.jpg);
+    }
+}
+.banner-content {
+    max-width: 100%;
+    margin-top: 107px;
+}
+.banner-content h1 {
+    font-size: 53px;
+    color: #fff;
+    font-family: arial;
+    margin-bottom: 17px;
+}
+.banner-content p {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 21px;
+    font-family: arial;
+}
+.banner-content a {
+    text-decoration: none;
+    width: 86px;
+    height: 27px;
+    background: linear-gradient(to left, #33ccff 0%, #00cc99 100%);
+    display: inline-block;
+    color: #fff;
+    line-height: 29px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 10px;
+    font-size: 20px;
+    transition: .4s;
+}
+.banner-content a:hover{
+    background: linear-gradient(to left, #1c77ff 0%, #36f7dd 100%);
+}
+
+/*...............contact-CSS.......................*/
+.contact-section {
+    margin-top: 497px;
+    background: #0095ee;
+    padding: 22px;
+}
+.d-flwx {
+    display: flex;
+    justify-content: space-between;
+}
+.contact-item {
+    width: 245px;
+    display: flex;
+}
+.c-icon{}
+.c-icon i {
+    color: blue;
+    font-size: 29px;
+    height: 41px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    background: #ddd;
+    padding: 5px;
+    transition: .5s;
+}
+.contact-item:hover .c-icon i{
+    background: rgb(2, 255, 242);
+}
+.c-text {
+    margin-left: 10px;
+    margin-top: 7px;
+    color: #fff;
+}
+.c-text h4{}
+.c-text h5{}
+
+/*..........Curabitur-section............*/
+.Curabitur-section {
+    margin-bottom: 30px;
+}
+.cur-top {
+    padding: 41px 0;
+}
+.cur-item p {
+    padding: 9px 0;
+    line-height: 25px;
+    font-size: 17px;
+    color: #444;
+}
+.cur-top h3 {
+    font-size: 41px;
+    color: #626262;
+}
+
+.cur-items {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.cur-item{
+    width: 29%;
+    padding: 6px 27px;
+    border: 1.5px solid #0095ee;
+    margin: 18px;
+    box-sizing: border-box;
+    transition: .4s;
+    position: relative;
+}
+.cur-item:hover{
+    background: #0095ee66;
+}
+.cur-item:hover .cur-top-icon i {
+    background: rgb(144, 11, 191);
+}
+.cur-item h3 {
+    padding: 16px 0;
+    color: #4f4f4f;
+}
+.cur-item p {
+    padding: 16px 0;
+    line-height: 18px;
+    font-size: 17px;
+    color: #444;
+}
+.cur-item a {
+    color: #353535;
+    text-decoration: none;
+}
+.cur-item i {
+    position: absolute;
+    top: -25px;
+    right: 18px;
+    width: 50px;
+    height: 50px;
+    background: #068aff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 26px;
+    color: #fff;
+    transition: .4s;
+}
+.cur-item:hover i{
+    background: rgb(5, 152, 172);
+}
+/*...........................Quam-section..........*/
+.Quam-section {
+    background: url(./img/new-year-bg.jpg)no-repeat;
+    background-position: center;
+    padding: 30px 0;
+}
+.Sapien-box {
+    display: flex;
+    box-sizing: border-box;
+    background: #fff;
+    padding: 47px;
+    margin-bottom: 51px;
+}
+.box-left {
+    width: 65%;
+}
+.box-right {
+    width: 35%;
+}
+.box-right img {
+    height: 100%;
+}
+.box-left h3 {
+    padding: 10px 0;
+    font-size: 24px;
+    color: #5e5e5e;
+}
+.box-left p {
+    font-size: 17px;
+    color: #515151;
+    padding: 10px 0;
+}
+.box-line {
+    display: flex;
+}
+.box-line-left {
+    width: 45%;
+    padding: 6px;
+}
+.box-line-left ul{
+    list-style-type: none;
+}
+.box-line-left ul li {
+    padding: 9px;
+    font-size: 17px;
+    color: #515151;
+    display: flex;
+}
+.box-line-left ul li span {
+    width: 25px;
+    height: 25px;
+    background: #0095ee;
+    display: block;
+    text-align: center;
+    line-height: 25px;
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: .4s;
+}
+.box-line-left ul li:hover span{
+    background: rgb(0, 255, 136);
+}
+.box-line-right{
+    width: 45%;
+    padding: 6px;
+}
+.box-line-right ul li {
+    padding: 9px;
+    font-size: 17px;
+    color: #515151;
+    display: flex;
+}
+.box-line-right ul li span {
+    width: 25px;
+    height: 25px;
+    background: #0095ee;
+    display: block;
+    text-align: center;
+    line-height: 25px;
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: .4s;
+}
+.box-line-right ul li:hover span{
+    background: rgb(0, 255, 136);
+}
+.magicmagic{}
+.box-right {
+    background: url(img/Business-img.jpg);
+    background-size: cover;
+}
+.box-right img{}
+
+.box-right::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000042;
+    display: none;
+
+    transition: .5s;
+}
+.box-right:hover::before{
+    display: block;
+    transition: .4s;
+}
+.box-right:hover::after{
+    display: block;
+    transition-delay: .4s;
+}
+/********........odio-section.............*******/
+.odio-section {
+    padding: 31px 0;
+}
+.odio-items {
+    display: flex;
+    justify-content: space-between;
+}
+.odio-item{
+    width: 30.52631%;
+}
+.imgs{
+    position: relative;
+}
+
+.imgs img{}
+
+.imgs::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 98%;
+    background: #1a69ff69;
+    display: none;
+    transition: .4s;
+}
+.imgs:hover::after{
+    display: block;
+}
+.odio-header{}
+.odio-header ul {
+    list-style: none;
+}
+.odio-header ul li {
+    display: inline-block;
+    padding: 10px 4px;
+    font-size: 12px;
+}
+.odio-header ul li a {
+    text-decoration: none;
+    color: #006ee4;
+}
+.odio-header h6 {
+    font-size: 23px;
+    padding: 10px 0;
+    color: #009fff;
+}
+.odio-header p {
+    padding: 3px 0;
+    font-size: 17px;
+    color: #535353;
+}
+/*................foter-section.................*/
+.foter-section {
+    background: #005171;
+}
+.foter-item{
+    width: 21.8421%;
+}
+.foter-item h4 {
+    font-size: 22px;
+    padding: 33px 0;
+    color: #fff;
+}
+.foter-item p {
+    font-size: 17px;
+    color: #fff;
+}
+.foter-item ul {
+    list-style: none;
+    padding: 26px 0;
+}
+.foter-item ul li{
+    display: inline-block;
+}
+
+.foter-item ul li a i {
+    color: #fff;
+    padding: 8px;
+    font-size: 21px;
+    background: #1c72ff;
+    border-radius: 5px;
+}
+.foter-item form{}
+.foter-item form input {
+    width: 100%;
+    padding: 9px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 9px;
+    margin-top: 4px;
+    border: 1px solid #00d3b5;
+    background: #5ea1e8;
+    color: #fff;
+    font-size: 17px;
+}
+.foter-item form input:focus{
+    background: #00d3b5;
+    border: 1px solid #00d3b5;
+    color: #fff;
+}
+.foter-item form button {
+    padding: 10px 36px;
+    background: #00d3b5;
+    border-radius: 10px;
+    color: #fff;
+    border: none;
+    font-size: 17px;
+    margin-top: 5px;
+    transition: .4s;
+    border: 1px solid #00d3b5;
+}
+.foter-item form button:hover {
+    background: blue;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+}
+.foter-chaild-2{}
+.foter-chaild-2 ul {
+    padding: 0;
+}
+.foter-chaild-2 ul li{}
+.foter-chaild-2 ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-size: 17px;
+    margin-bottom: 26px;
+    color: #06ffe8;
+}
+/*...................foter-botom...............*/
+.foter-botom {
+    padding: 20px;
+    background: #0278a6;
+    color: #fff;
+}
